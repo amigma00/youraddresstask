@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:new_task/Order_details.dart';
 import 'package:new_task/accha.dart';
 import 'package:new_task/orders.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       //themeMode: ThemeMode.system,
       title: 'Flutter Demo',
-      home: OrderPage(),
+      home: OrderDetails(),
     );
   }
 }
