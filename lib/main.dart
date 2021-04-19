@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_task/accha.dart';
+import 'package:new_task/orders.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,18 +10,18 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
-      theme: const CupertinoThemeData(brightness: Brightness.light),
+    return MaterialApp(
+      //theme: const CupertinoThemeData(brightness: Brightness.light),
 
       debugShowCheckedModeBanner: false,
-      // darkTheme: ThemeData(
+       darkTheme: ThemeData(
       //   primaryColor: Colors.deepOrange[800],
       //   accentColor: Colors.deepOrange[800],
-      //   //brightness: Brightness.dark,
-      // ),
+      brightness: Brightness.dark,
+      ),
       //themeMode: ThemeMode.system,
       title: 'Flutter Demo',
-      home: Accha(),
+      home: OrderPage(),
     );
   }
 }

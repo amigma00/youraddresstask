@@ -194,17 +194,24 @@ class _AcchaState extends State<Accha> {
   }
 
   List<bool> check = List.filled(10000, false);
+  String awd ;
+  //bool get isCus => awd = 'customizable';
+void nirnay(){
+  if(awd =='customizable')
+   onDabao(context);
+  else
+    onQuan(context);
+}
 
   _buildExpandableContent(Restaurant restro) {
     List<Widget> columnContent = [];
 
     for (String content in restro.contents) {
+      int asd = content.length;
       columnContent.add(
         GestureDetector(
           onTap: () {
-            //onDabao(context);
-
-            onQuan(context);
+            nirnay();
             // showCupertinoModalBottomSheet(
             //   context: context,
             //   builder: (BuildContext context) => CupertinoActionSheet(
@@ -294,7 +301,7 @@ class _AcchaState extends State<Accha> {
                     width: MediaQuery.of(context).size.width * 0.2,
                   ),
 
-                  Text("customizable"),
+                  Text(awd=""),
                   Icon(CupertinoIcons.ellipsis_circle_fill),
                 ],
               ),

@@ -1,4 +1,19 @@
 import 'accha.dart';
+import 'orders.dart';
+class Thik{
+static final List <Rest> ok =[
+  Rest(title:'Hotel',address:'Sadar, Nagpur'),
+  Rest(title:'Hotel',address:'Sadar, Nagpur'),
+  Rest(title:'Hotel',address:'Sadar, Nagpur'),
+  Rest(title:'Hotel',address:'Sadar, Nagpur'),
+  Rest(title:'Hotel',address:'Sadar, Nagpur'),
+];}
+class Rest {
+  String title;
+  String address;
+
+  Rest({this.title, this.address});
+}
 
 // List <Restaurant> dishName = [
 //   "Mysore Special Dosa",
@@ -20,7 +35,7 @@ import 'accha.dart';
 //   "Sub Item 7",],
 //
 // ];
-List pricee = ["₹10", "₹20", "₹30", "₹40", "₹50","₹60","₹70","₹80"];
+List pricee = ["₹10", "₹20", "₹30", "₹40", "₹50","₹60","₹70"];
 List<bool> hao =[true,false,true,true,false,true,true];
 List<Restaurant> restro = [
   new Restaurant(
@@ -35,7 +50,7 @@ List<Restaurant> restro = [
       "Sub Item 7",
     ],
     [
-      "10", "20", "30", "40", "50","60","70","80"
+      "10", "20", "30", "40", "50","60","70"
     ],
   ),
   new Restaurant(
